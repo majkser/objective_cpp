@@ -1,0 +1,13 @@
+polimorfizm statyczny - compile time dzieje się w czasie 
+kompilacji. Przykłady - przeciążanie metod i przeciążanie operatorów
+
+polimorfizm dynamiczny - runtime dzieje się w czasie działania programu juz po kompilacji. 
+Przykłady - dziedziczenie i wirtualne funkcje
+
+klasa abstrakcyjna - nie mozna utworzyć obiektu tej klasy,
+zawiera co najmniej jedną nie zaimplentowaną funkcję wirtualną - musi być nadpiasana
+w klasie pochodnej, może zawierać funkcje zaimplementowane i pola danych
+
+funkcja wirtualna - funkcja oznaczona słówkiem virtual,
+która może być nadpisana w klasie pochodnej. Jest wywoływana 
+zgodnie z typem obiektu, a nie typem wskaźnika lub referencji, który ją wywołuje
