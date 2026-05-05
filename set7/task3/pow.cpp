@@ -3,7 +3,15 @@
 template <int N>
 inline double pow(double x)
 {
-    return x * pow<N - 1>(x);
+    if constexpr (N % 2 == 0)
+    {
+        double y = pow<N / 2>(x);
+        return y * y;
+    }
+    else
+    {
+        return x * pow<N - 1>(x);
+    }
 }
 
 template <>
